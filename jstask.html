@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Task</title>
+</head>
+<body>
+    <script>
+        // string
+        let mystring = "Hello, World!";
+        console.log(mystring);
+
+        // length
+        let length = mystring.length;
+        console.log(length);
+
+        // Splitting based on comma and space
+        let words = mystring.split(", ");
+        console.log(words);
+
+        // Joining the words and converting to uppercase
+        let upperCaseString = words.join(" ").toUpperCase();
+        console.log(upperCaseString);
+
+        // Slicing the string
+        let sliced = upperCaseString.slice(7, 12);
+        console.log(sliced);
+
+        let x = "st";
+
+        if (x.length > 1) {
+            console.log("it's a string");
+        } else {
+            console.log("it's not a string");
+        }
+ 
+
+// Function to count vowels in a string
+function countVowels(inputString) {
+    let vowelCount = 0;
+    const vowels = "aeiouAEIOU";
+
+    for (let i = 0; i < inputString.length; i++) {
+        let currentChar = inputString[i];
+
+        if (vowels.includes(currentChar)) {
+            vowelCount++;
+        }
+    }
+
+    return vowelCount; // Return the vowel count
+}
+
+// Example usage
+let myString = "Hello, World!";
+let result = countVowels(myString);
+
+console.log("Number of vowels in '" + myString + "': " + result);
+
+
+
+//undefined datatype
+var z;
+console.log(z);  
+
+function exampleFunction() {
+ 
+}
+
+var results = exampleFunction();
+console.log(results); 
+
+var myVar = null;
+console.log(myVar);
+
+var someVar = null;
+var results = someVar ?? "DEFAULT VALUE"; //nullish coalescing operator (??)
+console.log(results);
+
+const symbol1 = Symbol('mySymbolS');
+const symbol2 = Symbol('mySymbol');
+
+console.log(symbol1 === symbol2);  // Output: false
+
+
+    </script>
+</body>
+</html>
+
+<SCRIPT>
+    //ARRAY
+    let myArray = [1, "two", true, [ key=> "value" ]];
+    console.log(myArray)
+
+    //two dimensional array
+    let matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+</SCRIPT>
